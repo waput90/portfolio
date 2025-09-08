@@ -53,7 +53,7 @@
     </a>
 
     <div include-html="html-includes/scripts.html"></div>
-        
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         function includeHTML() {
         var z, i, elmnt, file, xhttp;
@@ -69,8 +69,7 @@
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4) {
                 if (this.status == 200) {
-                    elmnt.parentElement.innerHTML = this.responseText
-                    elmnt.remove()
+                    $(elmnt).replaceWith(this.responseText)
                 }
                 if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
                 /* Remove the attribute, and call this function once more: */
