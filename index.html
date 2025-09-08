@@ -1,1 +1,88 @@
-TEST
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div include-html="html-includes/head.html"></div>
+</head>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    
+    <!-- ======= Header ======= -->
+    <div include-html="html-includes/header.html"></div>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in">
+        <h1>James Tubiano</h1>
+        <p>I'm <span class="typed" data-typed-items="C# .NET Developer, Enthusiast, Freelancer"></span></p>
+        </div>
+    </section><!-- End Hero -->
+    
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <div include-html="html-includes/about.html"></div>
+        <!-- End About Section -->
+
+        <!-- ======= Skills Section ======= -->
+        <div include-html="html-includes/skills.html"></div>
+        <!-- End Skills Section -->
+        
+        <!-- ======= Resume Section ======= -->
+        <div include-html="html-includes/resume.html"></div>
+        <!-- End Resume Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <div include-html="html-includes/portfolio.html"></div>
+        <!-- End Portfolio Section -->
+
+        <!-- ======= Recommendation Section ======= -->
+        <div include-html="html-includes/recommendation.html"></div>
+        <!-- End Recommendation Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <div include-html="html-includes/contact.html"></div>
+        <!-- End Contact Section -->
+    </main>
+        <!-- ======= Footer ======= -->
+        <div include-html="html-includes/footer.html"></div>
+        <!-- End  Footer -->
+
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
+
+        <div include-html="html-includes/scripts.html"></div>
+        
+<script>
+    function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("include-html");
+        if (file) {
+        /* Make an HTTP request using the attribute value as the file name: */
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /* Remove the attribute, and call this function once more: */
+            elmnt.removeAttribute("include-html");
+            includeHTML();
+            }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /* Exit the function: */
+        return;
+        }
+    }
+}
+includeHTML();
+</script>
+</body>
+</html>
