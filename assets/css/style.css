@@ -1001,6 +1001,7 @@ section {
 
 .contact .php-email-form button[type=button]:hover {
   background: #37b3ed;
+  color: #fff;
   text-decoration: none;
 }
 
