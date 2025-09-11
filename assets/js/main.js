@@ -316,4 +316,7 @@
     $(swiperWrapper).append(elem)
   })
 
+  // current age
+  $("#currentAge").text(new Date().getFullYear() - 1996)
+
 })()
