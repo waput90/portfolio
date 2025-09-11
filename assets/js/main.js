@@ -262,7 +262,7 @@
   const testimonials = [
     {
       name: 'Rowell C.',
-      img: 'assets/img/default.png',
+      img: 'https://media.licdn.com/dms/image/C5603AQHup9243FO7sQ/profile-displayphoto-shrink_800_800/0/1629891327081?e=2147483647&v=beta&t=yNtMWNKLAheQpk1ZPfGXVoNubl5zNmELSl5K-Ap6tSc',
       role: 'Senior ReactJS Developer',
       txt: `I had the pleasure of working with James for the a year at LoanMarket, where James was a vital member of our development team. 
           He consistently demonstrated a strong aptitude for software development, with a particular focus on developing while taking a deeper learning on ReactJS. 
@@ -270,7 +270,7 @@
     },
     {
       name: 'Emil Jan Thomas B.',
-      img: 'assets/img/default.png',
+      img: 'https://media.licdn.com/dms/image/C5103AQEvXR_o7pLMOg/profile-displayphoto-shrink_100_100/0/1521678508853?e=1681948800&v=beta&t=NroYD7zhTwQuxKJT-ER5j-sWfGPEYT1Ks2xNhE_EJ7s',
       role: 'Web Designer and Coder',
       txt: `James is the best colleague I've ever had.
           He is one of the most committed professionals I've ever worked with, and he is always prepared to lend a hand when needed.
@@ -279,19 +279,19 @@
     },
     {
       name: 'Hilarion V.',
-      img: 'assets/img/default.png',
+      img: 'https://media.licdn.com/dms/image/C5603AQGf6idcTlsH5w/profile-displayphoto-shrink_100_100/0/1650635862363?e=1681948800&v=beta&t=jPhzSv7iNq40f-GYXc5IYJxUroC-YanSK9EInpGK0CM',
       role: 'Web Desinger & SEO',
       txt: `I worked with James and his understanding of content management and frontend development is exceptional. He knows his stuff, I have to say. With this, he was able to demonstrate his skills on several tasks that were assigned to him, accomplished his task effectively, and satisfied the requirements of our client and the project. And though critical thinking was also able to solve problems that come on the way. Kudos to that!! 🙂`,
     },
     {
       name: 'Melvin Ray P.',
-      img: 'assets/img/default.png',
+      img: 'https://media.licdn.com/dms/image/D5603AQHWE6DW3V0mrQ/profile-displayphoto-shrink_100_100/0/1647610795785?e=1681948800&v=beta&t=q4Lac1PtzDGv2XYzpZw2VIlKzwQboLqLyyHuu4KzMr0',
       role: '.NET Developer',
       txt: `Pioneered our ASP.Net Core Projects. Excellent coding practices and principles.`,
     },
     {
       name: 'Emmanuel O.',
-      img: 'assets/img/default.png',
+      img: 'https://media.licdn.com/dms/image/C5603AQF5hr2rHxsR-w/profile-displayphoto-shrink_100_100/0/1517815722354?e=1681948800&v=beta&t=GmEuOSF6e9ZZV7d554XZ3V_BCyGPLm2_DR7xFH78Bbg',
       role: 'UX/UI Designer',
       txt: `It is a pleasure working with james in a team , he can handle and solved critical problems that are useful in terms of technicalities and software issues. He really is a full-stack developer with great experience nad knowledge on what are the standards in coding. KUDOS !`,
     }
@@ -322,6 +322,6 @@
     if (currentAge != null) {
       currentAge.innerHTML = (new Date().getFullYear() - 1996).toString()
     }
-  }, 100)
+  }, 500)
 
 })()
