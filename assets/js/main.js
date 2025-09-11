@@ -317,6 +317,7 @@
   })
 
   // current age
-  $("#currentAge").text(new Date().getFullYear() - 1996)
+  const currentAge = document.getElementById("currentAge")
+  currentAge.innerHTML = (new Date().getFullYear() - 1996).toString()
 
 })()
