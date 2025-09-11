@@ -317,7 +317,11 @@
   })
 
   // current age
-  const currentAge = document.getElementById("currentAge")
-  currentAge.innerHTML = (new Date().getFullYear() - 1996).toString()
+  setTimeout(() => {
+    const currentAge = document.getElementById("currentAge")
+    if (currentAge != null) {
+      currentAge.innerHTML = (new Date().getFullYear() - 1996).toString()
+    }
+  }, 100)
 
 })()
