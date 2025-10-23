@@ -316,4 +316,12 @@
     $(swiperWrapper).append(elem)
   })
 
+  // current age
+  setTimeout(() => {
+    const currentAge = document.getElementById("currentAge")
+    if (currentAge != null) {
+      currentAge.innerHTML = (new Date().getFullYear() - 1996).toString()
+    }
+  }, 500)
+
 })()
