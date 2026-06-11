@@ -44,37 +44,37 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   {
     title: 'ProfitFarmers',
-    image: '/images/portfolio/portfolio-1.jpg',
+    image: 'images/portfolio/portfolio-1.jpg',
     href: 'https://www.profitfarmers.com/',
     impacts: ['Contributed to production feature delivery', 'Supported release readiness and quality checks'],
   },
   {
     title: 'MyCRM Finance',
-    image: '/images/portfolio/portfolio-2.jpg',
+    image: 'images/portfolio/portfolio-2.jpg',
     href: 'https://mycrm.finance',
     impacts: ['Handled legacy and modern app fixes', 'Built privacy consent and workflow enhancements'],
   },
   {
     title: 'Koboom',
-    image: '/images/portfolio/portfolio-3.jpg',
+    image: 'images/portfolio/portfolio-3.jpg',
     href: 'https://koboom.kr/',
     impacts: ['Supported full stack feature updates', 'Improved maintainability through refactoring'],
   },
   {
     title: 'Propillo',
-    image: '/images/portfolio/portfolio-4.jpg',
+    image: 'images/portfolio/portfolio-4.jpg',
     href: 'https://propillo.com/',
     impacts: ['Maintained mortgage platform features', 'Integrated external APIs and payment services'],
   },
   {
     title: 'Witz Group',
-    image: '/images/portfolio/portfolio-5.jpg',
+    image: 'images/portfolio/portfolio-5.jpg',
     href: 'https://www.witzgroup.com/',
     impacts: ['Delivered backend service improvements', 'Contributed to API troubleshooting and reliability'],
   },
   {
     title: 'Interactive Partners',
-    image: '/images/portfolio/portfolio-6.jpg',
+    image: 'images/portfolio/portfolio-6.jpg',
     href: 'https://interactivepartners.com.au/',
     impacts: ['Implemented API integrations for clients', 'Accelerated feature delivery with practical architecture'],
   },

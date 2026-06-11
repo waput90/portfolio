@@ -393,7 +393,7 @@ const App: React.FC = () => {
             <div className="relative border-t border-white/10 md:border-t-0 md:border-l">
               <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent" />
               <img
-                src="/images/profile-img.jpeg"
+                src="images/profile-img.jpeg"
                 alt="James Tubiano"
                 className="animate-float h-full min-h-[340px] w-full object-cover"
               />
@@ -769,7 +769,7 @@ const App: React.FC = () => {
                 <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
                   <div className="flex items-start gap-3">
                     <img
-                      src="/images/profile-img.jpeg"
+                      src="images/profile-img.jpeg"
                       alt="James Tubiano"
                       className="h-16 w-16 rounded-xl object-cover ring-1 ring-white/20"
                     />
