@@ -291,3 +291,14 @@ export const aggregateInsights: AggregateInsights = {
     'Strong collaborator and teammate',
   ],
 }
+
+export const navItems = [
+    'about', 
+    'snapshot', 
+    'impact', 
+    'skills', 
+    'experience', 
+    'projects', 
+    'testimonials', 
+    'contact'
+]
