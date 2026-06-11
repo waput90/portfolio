@@ -287,9 +287,9 @@ const App: React.FC = () => {
               </p>
 
               <div className="animate-fade-up mt-4 flex flex-wrap gap-2" style={{ animationDelay: '0.24s' }}>
-                <span className="rounded-full border border-cyan-300/35 bg-cyan-300/10 px-3 py-1 text-xs font-semibold text-cyan-100">
+                {/* <span className="rounded-full border border-cyan-300/35 bg-cyan-300/10 px-3 py-1 text-xs font-semibold text-cyan-100">
                   Open to Senior .NET Roles
-                </span>
+                </span> */}
                 <span className="rounded-full border border-orange-300/35 bg-orange-300/10 px-3 py-1 text-xs font-semibold text-orange-100">
                   Available for Freelance Projects
                 </span>
