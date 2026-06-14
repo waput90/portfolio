@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prepare": "tw-patch install",
+    "prebuild": "tw-patch install && tw-patch extract",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"

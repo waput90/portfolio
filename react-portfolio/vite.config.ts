@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import vitePluginTailwindMangle from 'unplugin-tailwindcss-mangle/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   base: '',
-  plugins: [react(), tailwindcss(), vitePluginTailwindMangle()],
-})
+  plugins: [react(), tailwindcss(), ...(command === 'build' ? [vitePluginTailwindMangle()] : [])],
+}))
