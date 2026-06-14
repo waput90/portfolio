@@ -89,6 +89,9 @@ export const SKILL_ICONS: Record<string, string> = {
   'AI Integration': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg',
 }
 
+export const davao: [number, number] = [7.1907, 125.4553]
+
+
 
 export const skills: Skill[] = skillCategories.flatMap(cat => cat.skills)
 
