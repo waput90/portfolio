@@ -17,7 +17,8 @@ export const Header: React.FC<HeaderProps> = ({ activeSection, scrollProgress })
                         key={item}
                         href={`#${item}`}
                         className={`rounded-full border px-3 py-1.5 capitalize transition ${activeSection === item
-                                ? 'border-cyan-300/60 bg-cyan-300/10 text-cyan-100'
+                                ? 'border-white/10 hover:border-white/30 hover:text-white'
+                                // 'border-cyan-300/60 bg-cyan-300/10 text-cyan-100'
                                 : 'border-white/10 hover:border-white/30 hover:text-white'}`}
                     >
                         {item}
