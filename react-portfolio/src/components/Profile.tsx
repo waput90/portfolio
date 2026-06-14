@@ -1,4 +1,4 @@
-import { TerminalWhoAmI } from "../TerminalWhoAmI";
+import { TerminalWhoAmI } from "./TerminalWhoAmI";
 
 interface ProfileProps {
     yearsExperience: number
