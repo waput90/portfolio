@@ -272,7 +272,7 @@ const App: React.FC = () => {
           <section id="hero" className="glass-card grid overflow-hidden md:grid-cols-[1.1fr_0.9fr]">
             <div className="p-6 md:p-10">
               <p className="animate-fade-up text-xs font-semibold tracking-[0.3em] text-orange-200 uppercase" style={{ animationDelay: '0.05s' }}>
-                C# .NET Developer | Frontend Enthusiast
+                C# | .NET | Enthusiast Rockstar Developer
               </p>
               <h1
                 className="font-display animate-fade-up mt-3 text-4xl leading-tight font-semibold md:text-6xl"
@@ -282,7 +282,7 @@ const App: React.FC = () => {
                 <span className="text-gradient"> speed, reliability, and craft.</span>
               </h1>
               <p className="animate-fade-up mt-4 max-w-2xl text-sm text-slate-300 md:text-base" style={{ animationDelay: '0.2s' }}>
-                I am James Tubiano, a software engineer with 5+ years of experience shipping
+                I am James Tubiano, a software engineer with {yearsExperience}+ years of experience shipping
                 applications with C#, ASP.NET Core, Angular, and React.
               </p>
 
@@ -669,14 +669,6 @@ const App: React.FC = () => {
                     tubianojames@gmail.com
                   </a>
                   <p>Anywhere in Davao City, PH</p>
-                  <a
-                    href="https://maps.google.com/maps?q=davao city"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-cyan-200 underline underline-offset-4"
-                  >
-                    Open in Google Maps
-                  </a>
                 </div>
               </div>
 
