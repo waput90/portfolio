@@ -1,6 +1,12 @@
-type Skill = {
+﻿type Skill = {
   name: string
   level: number
+}
+
+type SkillCategory = {
+  category: string
+  description: string
+  skills: Skill[]
 }
 
 type Experience = {
@@ -30,16 +36,61 @@ type AggregateInsights = {
   careerSignals: string[]
 }
 
-export const skills: Skill[] = [
-  { name: 'HTML', level: 100 },
-  { name: 'CSS', level: 85 },
-  { name: 'C#', level: 80 },
-  { name: 'JavaScript', level: 85 },
-  { name: 'ReactJS', level: 65 },
-  { name: 'Angular', level: 55 },
-  { name: '.NET Core', level: 85 },
-  { name: 'Communication', level: 75 },
+
+export const skillCategories: SkillCategory[] = [
+  {
+    category: 'Backend & Architecture',
+    description: 'Building scalable server-side solutions with modern frameworks and design patterns',
+    skills: [
+      { name: 'C#', level: 90 },
+      { name: '.NET Core', level: 90 },
+    ],
+  },
+  {
+    category: 'Frontend',
+    description: 'Crafting responsive, interactive user interfaces with pixel-perfect design',
+    skills: [
+      { name: 'HTML', level: 100 },
+      { name: 'CSS', level: 90 },
+      { name: 'JavaScript', level: 90 },
+      { name: 'ReactJS', level: 80 },
+      { name: 'Angular', level: 70 },
+    ],
+  },
+  {
+    category: 'AI & Automation',
+    description: 'Leveraging AI tools and automating workflows to boost productivity and intelligence',
+    skills: [
+      { name: 'AI Integration', level: 75 },
+    ],
+  },
+  {
+    category: 'Professional',
+    description: 'Clear communication and collaborative problem-solving across teams',
+    skills: [
+      { name: 'Communication', level: 85 },
+    ],
+  },
 ]
+
+export const linkedinUrl = 'https://www.linkedin.com/in/james-t-140428149/'
+
+export const qrSrc = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(linkedinUrl)}`
+
+export const SKILL_ICONS: Record<string, string> = {
+  HTML: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+  CSS: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+  'C#': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
+  JavaScript: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+  ReactJS: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+  Angular: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
+  '.NET Core': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg',
+  Communication: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg',
+  'AI Integration': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg',
+}
+
+
+export const skills: Skill[] = skillCategories.flatMap(cat => cat.skills)
 
 export const projects: Project[] = [
   {
